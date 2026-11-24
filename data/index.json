@@ -1,0 +1,1173 @@
+{
+ "updated": "2026-11-24 23:51",
+ "sites": {
+  "subi": {
+   "observations": [
+    {
+     "date": "2026-08-03",
+     "scene": "S2C_T49PHN_20260803T030046_L2A",
+     "cloud_pct": 8.8,
+     "usable": true,
+     "image": "data/subi/2026-08-03.jpg",
+     "diff": null,
+     "compared_to": null,
+     "change_pct": null,
+     "alert": false
+    },
+    {
+     "date": "2026-08-13",
+     "scene": "S2C_T49PHN_20260813T030134_L2A",
+     "cloud_pct": 82.3,
+     "usable": false
+    },
+    {
+     "date": "2026-08-15",
+     "scene": "S2A_49PHN_20260815_1_L2A",
+     "cloud_pct": 100.0,
+     "usable": false
+    },
+    {
+     "date": "2026-08-23",
+     "scene": "S2C_T49PHN_20260823T025312_L2A",
+     "cloud_pct": 28.2,
+     "usable": false
+    },
+    {
+     "date": "2026-09-02",
+     "scene": "S2C_T49PHN_20260902T030043_L2A",
+     "cloud_pct": 24.8,
+     "usable": false
+    },
+    {
+     "date": "2026-09-07",
+     "scene": "S2B_T49PHN_20260907T030259_L2A",
+     "cloud_pct": 15.4,
+     "usable": false
+    },
+    {
+     "date": "2026-09-27",
+     "scene": "S2B_T49PHN_20260927T025423_L2A",
+     "cloud_pct": 9.0,
+     "usable": true,
+     "image": "data/subi/2026-09-27.jpg",
+     "diff": "data/subi/2026-09-27_diff.jpg",
+     "compared_to": "2026-08-03",
+     "change_pct": 0.49,
+     "alert": false
+    },
+    {
+     "date": "2026-10-02",
+     "scene": "S2C_49PHN_20261002_0_L2A",
+     "cloud_pct": 19.4,
+     "usable": false
+    },
+    {
+     "date": "2026-10-07",
+     "scene": "S2B_49PHN_20261007_0_L2A",
+     "cloud_pct": 24.0,
+     "usable": false
+    },
+    {
+     "date": "2026-10-12",
+     "scene": "S2C_49PHN_20261012_0_L2A",
+     "cloud_pct": 28.6,
+     "usable": false
+    },
+    {
+     "date": "2026-10-17",
+     "scene": "S2B_49PHN_20261017_0_L2A",
+     "cloud_pct": 12.0,
+     "usable": true,
+     "image": "data/subi/2026-10-17.jpg",
+     "diff": "data/subi/2026-10-17_diff.jpg",
+     "compared_to": "2026-09-27",
+     "change_pct": 0.19,
+     "alert": false
+    },
+    {
+     "date": "2026-10-22",
+     "scene": "S2C_49PHN_20261022_0_L2A",
+     "cloud_pct": 17.3,
+     "usable": false
+    },
+    {
+     "date": "2026-10-27",
+     "scene": "S2B_49PHN_20261027_0_L2A",
+     "cloud_pct": 65.9,
+     "usable": false
+    },
+    {
+     "date": "2026-11-03",
+     "scene": "S2A_T49PHN_20261103T030249_L2A",
+     "cloud_pct": 10.6,
+     "usable": true,
+     "image": "data/subi/2026-11-03.jpg",
+     "diff": "data/subi/2026-11-03_diff.jpg",
+     "compared_to": "2026-10-17",
+     "change_pct": 0.28,
+     "alert": false
+    },
+    {
+     "date": "2026-11-06",
+     "scene": "S2B_49PHN_20261106_0_L2A",
+     "cloud_pct": 6.9,
+     "usable": true,
+     "image": "data/subi/2026-11-06.jpg",
+     "diff": "data/subi/2026-11-06_diff.jpg",
+     "compared_to": "2026-11-03",
+     "change_pct": 0.5,
+     "alert": false
+    },
+    {
+     "date": "2026-11-11",
+     "scene": "S2C_T49PHN_20261111T025842_L2A",
+     "cloud_pct": 84.0,
+     "usable": false
+    },
+    {
+     "date": "2026-11-16",
+     "scene": "S2B_T49PHN_20261116T030346_L2A",
+     "cloud_pct": 70.7,
+     "usable": false
+    },
+    {
+     "date": "2026-11-23",
+     "scene": "S2A_T49PHN_20261123T030248_L2A",
+     "cloud_pct": 19.0,
+     "usable": false
+    }
+   ],
+   "name": "Subi Reef",
+   "region": "Spratly Islands",
+   "lat": 10.923,
+   "lng": 114.084
+  },
+  "fiery": {
+   "observations": [
+    {
+     "date": "2026-10-02",
+     "scene": "S2C_49PFL_20261002_0_L2A",
+     "cloud_pct": 27.4,
+     "usable": false
+    },
+    {
+     "date": "2026-10-07",
+     "scene": "S2B_T49PGL_20261007T030056_L2A",
+     "cloud_pct": 81.5,
+     "usable": false
+    },
+    {
+     "date": "2026-10-12",
+     "scene": "S2C_T49PFL_20261012T025356_L2A",
+     "cloud_pct": 24.2,
+     "usable": false
+    },
+    {
+     "date": "2026-10-14",
+     "scene": "S2A_49PGL_20261014_1_L2A",
+     "cloud_pct": 18.7,
+     "usable": false
+    },
+    {
+     "date": "2026-10-17",
+     "scene": "S2B_T49PFL_20261017T025750_L2A",
+     "cloud_pct": 4.3,
+     "usable": true,
+     "image": "data/fiery/2026-10-17.jpg",
+     "diff": null,
+     "compared_to": null,
+     "change_pct": null,
+     "alert": false
+    },
+    {
+     "date": "2026-10-22",
+     "scene": "S2C_T49PFL_20261022T025935_L2A",
+     "cloud_pct": 1.8,
+     "usable": true,
+     "image": "data/fiery/2026-10-22.jpg",
+     "diff": "data/fiery/2026-10-22_diff.jpg",
+     "compared_to": "2026-10-17",
+     "change_pct": 0.0,
+     "alert": false
+    },
+    {
+     "date": "2026-10-27",
+     "scene": "S2B_49PGL_20261027_0_L2A",
+     "cloud_pct": 100.0,
+     "usable": false
+    },
+    {
+     "date": "2026-11-03",
+     "scene": "S2A_T49PFL_20261103T030249_L2A",
+     "cloud_pct": 4.0,
+     "usable": true,
+     "image": "data/fiery/2026-11-03.jpg",
+     "diff": "data/fiery/2026-11-03_diff.jpg",
+     "compared_to": "2026-10-22",
+     "change_pct": 0.0,
+     "alert": false
+    },
+    {
+     "date": "2026-11-06",
+     "scene": "S2B_49PGL_20261106_0_L2A",
+     "cloud_pct": 48.7,
+     "usable": false
+    },
+    {
+     "date": "2026-11-16",
+     "scene": "S2B_T49PFL_20261116T030346_L2A",
+     "cloud_pct": 29.6,
+     "usable": false
+    },
+    {
+     "date": "2026-11-21",
+     "scene": "S2C_49PFL_20261121_0_L2A",
+     "cloud_pct": 9.2,
+     "usable": true,
+     "image": "data/fiery/2026-11-21.jpg",
+     "diff": "data/fiery/2026-11-21_diff.jpg",
+     "compared_to": "2026-11-03",
+     "change_pct": 0.19,
+     "alert": false
+    },
+    {
+     "date": "2026-11-23",
+     "scene": "S2A_49PFL_20261123_0_L2A",
+     "cloud_pct": 5.8,
+     "usable": true,
+     "image": "data/fiery/2026-11-23.jpg",
+     "diff": "data/fiery/2026-11-23_diff.jpg",
+     "compared_to": "2026-11-21",
+     "change_pct": 0.08,
+     "alert": false
+    }
+   ],
+   "name": "Fiery Cross Reef",
+   "region": "Spratly Islands",
+   "lat": 9.549,
+   "lng": 112.889
+  },
+  "mischief": {
+   "observations": [
+    {
+     "date": "2026-10-01",
+     "scene": "S2A_50PLS_20261001_0_L2A",
+     "cloud_pct": 15.3,
+     "usable": false
+    },
+    {
+     "date": "2026-10-04",
+     "scene": "S2B_T50PLS_20261004T024457_L2A",
+     "cloud_pct": 94.4,
+     "usable": false
+    },
+    {
+     "date": "2026-10-09",
+     "scene": "S2C_50PLS_20261009_0_L2A",
+     "cloud_pct": 26.4,
+     "usable": false
+    },
+    {
+     "date": "2026-10-14",
+     "scene": "S2B_50PLS_20261014_0_L2A",
+     "cloud_pct": 19.4,
+     "usable": false
+    },
+    {
+     "date": "2026-10-21",
+     "scene": "S2A_50PLS_20261021_0_L2A",
+     "cloud_pct": 43.1,
+     "usable": false
+    },
+    {
+     "date": "2026-11-03",
+     "scene": "S2B_T50PLS_20261103T024929_L2A",
+     "cloud_pct": 7.7,
+     "usable": true,
+     "image": "data/mischief/2026-11-03.jpg",
+     "diff": null,
+     "compared_to": null,
+     "change_pct": null,
+     "alert": false
+    },
+    {
+     "date": "2026-11-08",
+     "scene": "S2C_50PLS_20261108_0_L2A",
+     "cloud_pct": 2.4,
+     "usable": true,
+     "image": "data/mischief/2026-11-08.jpg",
+     "diff": "data/mischief/2026-11-08_diff.jpg",
+     "compared_to": "2026-11-03",
+     "change_pct": 0.01,
+     "alert": false
+    },
+    {
+     "date": "2026-11-10",
+     "scene": "S2A_50PLS_20261110_0_L2A",
+     "cloud_pct": 2.2,
+     "usable": true,
+     "image": "data/mischief/2026-11-10.jpg",
+     "diff": "data/mischief/2026-11-10_diff.jpg",
+     "compared_to": "2026-11-08",
+     "change_pct": 0.21,
+     "alert": false
+    },
+    {
+     "date": "2026-11-13",
+     "scene": "S2B_T50PLS_20261113T024718_L2A",
+     "cloud_pct": 60.2,
+     "usable": false
+    },
+    {
+     "date": "2026-11-23",
+     "scene": "S2B_T50PLR_20261123T024840_L2A",
+     "cloud_pct": 13.0,
+     "usable": true,
+     "image": "data/mischief/2026-11-23.jpg",
+     "diff": "data/mischief/2026-11-23_diff.jpg",
+     "compared_to": "2026-11-10",
+     "change_pct": 0.29,
+     "alert": false
+    }
+   ],
+   "name": "Mischief Reef",
+   "region": "Spratly Islands",
+   "lat": 9.902,
+   "lng": 115.537
+  },
+  "woody": {
+   "observations": [
+    {
+     "date": "2026-08-11",
+     "scene": "S2B_T49QFU_20260811T030901_L2A",
+     "cloud_pct": 81.9,
+     "usable": false
+    },
+    {
+     "date": "2026-08-21",
+     "scene": "S2B_T49QFU_20260821T031040_L2A",
+     "cloud_pct": 21.5,
+     "usable": false
+    },
+    {
+     "date": "2026-08-26",
+     "scene": "S2C_49QFU_20260826_0_L2A",
+     "cloud_pct": 41.8,
+     "usable": false
+    },
+    {
+     "date": "2026-08-28",
+     "scene": "S2A_T49QFU_20260828T030155_L2A",
+     "cloud_pct": 22.6,
+     "usable": false
+    },
+    {
+     "date": "2026-09-05",
+     "scene": "S2C_T49QFU_20260905T030633_L2A",
+     "cloud_pct": 37.8,
+     "usable": false
+    },
+    {
+     "date": "2026-09-25",
+     "scene": "S2C_T49QFU_20260925T030357_L2A",
+     "cloud_pct": 18.6,
+     "usable": false
+    },
+    {
+     "date": "2026-09-30",
+     "scene": "S2B_T49QFU_20260930T030439_L2A",
+     "cloud_pct": 28.3,
+     "usable": false
+    },
+    {
+     "date": "2026-10-05",
+     "scene": "S2C_T49QFU_20261005T030252_L2A",
+     "cloud_pct": 41.5,
+     "usable": false
+    },
+    {
+     "date": "2026-10-15",
+     "scene": "S2C_T49QFU_20261015T030502_L2A",
+     "cloud_pct": 4.1,
+     "usable": true,
+     "image": "data/woody/2026-10-15.jpg",
+     "diff": null,
+     "compared_to": null,
+     "change_pct": null,
+     "alert": false
+    },
+    {
+     "date": "2026-10-20",
+     "scene": "S2B_T49QFU_20261020T031049_L2A",
+     "cloud_pct": 24.6,
+     "usable": false
+    },
+    {
+     "date": "2026-10-25",
+     "scene": "S2C_T49QFU_20261025T030629_L2A",
+     "cloud_pct": 27.7,
+     "usable": false
+    },
+    {
+     "date": "2026-10-27",
+     "scene": "S2A_49QFU_20261027_3_L2A",
+     "cloud_pct": 4.7,
+     "usable": true,
+     "image": "data/woody/2026-10-27.jpg",
+     "diff": "data/woody/2026-10-27_diff.jpg",
+     "compared_to": "2026-10-15",
+     "change_pct": 0.36,
+     "alert": false
+    },
+    {
+     "date": "2026-10-30",
+     "scene": "S2B_49QFU_20261030_0_L2A",
+     "cloud_pct": 29.5,
+     "usable": false
+    },
+    {
+     "date": "2026-11-04",
+     "scene": "S2C_49QFU_20261104_0_L2A",
+     "cloud_pct": 23.0,
+     "usable": false
+    },
+    {
+     "date": "2026-11-09",
+     "scene": "S2B_T49QFU_20261109T030419_L2A",
+     "cloud_pct": 43.4,
+     "usable": false
+    },
+    {
+     "date": "2026-11-16",
+     "scene": "S2A_49QFU_20261116_2_L2A",
+     "cloud_pct": 5.5,
+     "usable": true,
+     "image": "data/woody/2026-11-16.jpg",
+     "diff": "data/woody/2026-11-16_diff.jpg",
+     "compared_to": "2026-10-27",
+     "change_pct": 0.6,
+     "alert": false
+    },
+    {
+     "date": "2026-11-19",
+     "scene": "S2B_49QFU_20261119_0_L2A",
+     "cloud_pct": 15.6,
+     "usable": false
+    },
+    {
+     "date": "2026-11-24",
+     "scene": "S2C_49QFU_20261124_0_L2A",
+     "cloud_pct": 25.2,
+     "usable": false
+    }
+   ],
+   "name": "Woody Island",
+   "region": "Paracel Islands",
+   "lat": 16.834,
+   "lng": 112.338
+  },
+  "djibouti": {
+   "observations": [
+    {
+     "date": "2026-09-26",
+     "scene": "S2C_T38PKT_20260926T074504_L2A",
+     "cloud_pct": 0.1,
+     "usable": true,
+     "image": "data/djibouti/2026-09-26.jpg",
+     "diff": null,
+     "compared_to": null,
+     "change_pct": null,
+     "alert": false
+    },
+    {
+     "date": "2026-09-28",
+     "scene": "S2A_T38PKT_20260928T074630_L2A",
+     "cloud_pct": 0.0,
+     "usable": true,
+     "image": "data/djibouti/2026-09-28.jpg",
+     "diff": "data/djibouti/2026-09-28_diff.jpg",
+     "compared_to": "2026-09-26",
+     "change_pct": 0.32,
+     "alert": false
+    },
+    {
+     "date": "2026-10-01",
+     "scene": "S2B_T38PKT_20261001T073616_L2A",
+     "cloud_pct": 0.1,
+     "usable": true,
+     "image": "data/djibouti/2026-10-01.jpg",
+     "diff": "data/djibouti/2026-10-01_diff.jpg",
+     "compared_to": "2026-09-28",
+     "change_pct": 0.15,
+     "alert": false
+    },
+    {
+     "date": "2026-10-06",
+     "scene": "S2C_38PKT_20261006_0_L2A",
+     "cloud_pct": 2.7,
+     "usable": true,
+     "image": "data/djibouti/2026-10-06.jpg",
+     "diff": "data/djibouti/2026-10-06_diff.jpg",
+     "compared_to": "2026-10-01",
+     "change_pct": 0.75,
+     "alert": false
+    },
+    {
+     "date": "2026-10-08",
+     "scene": "S2A_38PKT_20261008_0_L2A",
+     "cloud_pct": 2.2,
+     "usable": true,
+     "image": "data/djibouti/2026-10-08.jpg",
+     "diff": "data/djibouti/2026-10-08_diff.jpg",
+     "compared_to": "2026-10-06",
+     "change_pct": 2.91,
+     "alert": false
+    },
+    {
+     "date": "2026-10-11",
+     "scene": "S2B_38PKT_20261011_0_L2A",
+     "cloud_pct": 42.5,
+     "usable": false
+    },
+    {
+     "date": "2026-10-16",
+     "scene": "S2C_T38PKT_20261016T074024_L2A",
+     "cloud_pct": 0.4,
+     "usable": true,
+     "image": "data/djibouti/2026-10-16.jpg",
+     "diff": "data/djibouti/2026-10-16_diff.jpg",
+     "compared_to": "2026-10-08",
+     "change_pct": 3.54,
+     "alert": false
+    },
+    {
+     "date": "2026-10-18",
+     "scene": "S2A_T38PKT_20261018T074627_L2A",
+     "cloud_pct": 0.0,
+     "usable": true,
+     "image": "data/djibouti/2026-10-18.jpg",
+     "diff": "data/djibouti/2026-10-18_diff.jpg",
+     "compared_to": "2026-10-16",
+     "change_pct": 2.04,
+     "alert": false
+    },
+    {
+     "date": "2026-10-21",
+     "scene": "S2B_38PKT_20261021_0_L2A",
+     "cloud_pct": 0.2,
+     "usable": true,
+     "image": "data/djibouti/2026-10-21.jpg",
+     "diff": "data/djibouti/2026-10-21_diff.jpg",
+     "compared_to": "2026-10-18",
+     "change_pct": 11.75,
+     "alert": false
+    },
+    {
+     "date": "2026-10-26",
+     "scene": "S2C_38PKT_20261026_0_L2A",
+     "cloud_pct": 23.2,
+     "usable": false
+    },
+    {
+     "date": "2026-10-28",
+     "scene": "S2A_T38PKT_20261028T074428_L2A",
+     "cloud_pct": 0.0,
+     "usable": true,
+     "image": "data/djibouti/2026-10-28.jpg",
+     "diff": "data/djibouti/2026-10-28_diff.jpg",
+     "compared_to": "2026-10-21",
+     "change_pct": 14.23,
+     "alert": false
+    },
+    {
+     "date": "2026-10-31",
+     "scene": "S2B_38PKT_20261031_0_L2A",
+     "cloud_pct": 0.2,
+     "usable": true,
+     "image": "data/djibouti/2026-10-31.jpg",
+     "diff": "data/djibouti/2026-10-31_diff.jpg",
+     "compared_to": "2026-10-28",
+     "change_pct": 0.04,
+     "alert": false
+    },
+    {
+     "date": "2026-11-05",
+     "scene": "S2C_T38PKT_20261105T074022_L2A",
+     "cloud_pct": 0.8,
+     "usable": true,
+     "image": "data/djibouti/2026-11-05.jpg",
+     "diff": "data/djibouti/2026-11-05_diff.jpg",
+     "compared_to": "2026-10-31",
+     "change_pct": 1.49,
+     "alert": false
+    },
+    {
+     "date": "2026-11-07",
+     "scene": "S2A_T38PKT_20261107T074622_L2A",
+     "cloud_pct": 49.5,
+     "usable": false
+    },
+    {
+     "date": "2026-11-10",
+     "scene": "S2B_T38PKT_20261110T073820_L2A",
+     "cloud_pct": 0.0,
+     "usable": true,
+     "image": "data/djibouti/2026-11-10.jpg",
+     "diff": "data/djibouti/2026-11-10_diff.jpg",
+     "compared_to": "2026-11-05",
+     "change_pct": 1.56,
+     "alert": false
+    },
+    {
+     "date": "2026-11-15",
+     "scene": "S2C_38PKT_20261115_0_L2A",
+     "cloud_pct": 7.7,
+     "usable": true,
+     "image": "data/djibouti/2026-11-15.jpg",
+     "diff": "data/djibouti/2026-11-15_diff.jpg",
+     "compared_to": "2026-11-10",
+     "change_pct": 0.96,
+     "alert": false
+    },
+    {
+     "date": "2026-11-17",
+     "scene": "S2A_38PKT_20261117_0_L2A",
+     "cloud_pct": 3.8,
+     "usable": true,
+     "image": "data/djibouti/2026-11-17.jpg",
+     "diff": "data/djibouti/2026-11-17_diff.jpg",
+     "compared_to": "2026-11-15",
+     "change_pct": 2.51,
+     "alert": false
+    },
+    {
+     "date": "2026-11-20",
+     "scene": "S2B_38PKT_20261120_0_L2A",
+     "cloud_pct": 0.6,
+     "usable": true,
+     "image": "data/djibouti/2026-11-20.jpg",
+     "diff": "data/djibouti/2026-11-20_diff.jpg",
+     "compared_to": "2026-11-17",
+     "change_pct": 2.29,
+     "alert": false
+    }
+   ],
+   "name": "PLA Support Base Djibouti",
+   "region": "Horn of Africa",
+   "lat": 11.59,
+   "lng": 43.065
+  },
+  "ream": {
+   "observations": [
+    {
+     "date": "2026-04-17",
+     "scene": "S2C_48PUS_20260417_0_L2A",
+     "cloud_pct": 0.5,
+     "usable": true,
+     "image": "data/ream/2026-04-17.jpg",
+     "diff": null,
+     "compared_to": null,
+     "change_pct": null,
+     "alert": false
+    },
+    {
+     "date": "2026-04-19",
+     "scene": "S2A_48PUS_20260419_1_L2A",
+     "cloud_pct": 11.8,
+     "usable": true,
+     "image": "data/ream/2026-04-19.jpg",
+     "diff": "data/ream/2026-04-19_diff.jpg",
+     "compared_to": "2026-04-17",
+     "change_pct": 0.29,
+     "alert": false
+    },
+    {
+     "date": "2026-04-22",
+     "scene": "S2B_T48PUS_20260422T033946_L2A",
+     "cloud_pct": 0.2,
+     "usable": true,
+     "image": "data/ream/2026-04-22.jpg",
+     "diff": "data/ream/2026-04-22_diff.jpg",
+     "compared_to": "2026-04-19",
+     "change_pct": 0.7,
+     "alert": false
+    },
+    {
+     "date": "2026-05-22",
+     "scene": "S2B_48PUS_20260522_0_L2A",
+     "cloud_pct": 33.9,
+     "usable": false
+    },
+    {
+     "date": "2026-06-16",
+     "scene": "S2C_T48PUS_20260616T034135_L2A",
+     "cloud_pct": 16.7,
+     "usable": false
+    },
+    {
+     "date": "2026-06-21",
+     "scene": "S2B_48PUS_20260621_0_L2A",
+     "cloud_pct": 22.6,
+     "usable": false
+    },
+    {
+     "date": "2026-07-11",
+     "scene": "S2B_T48PUS_20260711T033801_L2A",
+     "cloud_pct": 29.4,
+     "usable": false
+    },
+    {
+     "date": "2026-07-16",
+     "scene": "S2C_48PUS_20260716_0_L2A",
+     "cloud_pct": 1.4,
+     "usable": true,
+     "image": "data/ream/2026-07-16.jpg",
+     "diff": "data/ream/2026-07-16_diff.jpg",
+     "compared_to": "2026-04-22",
+     "change_pct": 3.14,
+     "alert": false
+    },
+    {
+     "date": "2026-07-21",
+     "scene": "S2B_T48PUS_20260721T033806_L2A",
+     "cloud_pct": 9.6,
+     "usable": true,
+     "image": "data/ream/2026-07-21.jpg",
+     "diff": "data/ream/2026-07-21_diff.jpg",
+     "compared_to": "2026-07-16",
+     "change_pct": 0.84,
+     "alert": false
+    },
+    {
+     "date": "2026-09-19",
+     "scene": "S2B_T48PUS_20260919T034402_L2A",
+     "cloud_pct": 14.3,
+     "usable": true,
+     "image": "data/ream/2026-09-19.jpg",
+     "diff": "data/ream/2026-09-19_diff.jpg",
+     "compared_to": "2026-07-21",
+     "change_pct": 2.46,
+     "alert": false
+    },
+    {
+     "date": "2026-09-29",
+     "scene": "S2B_T48PUS_20260929T034504_L2A",
+     "cloud_pct": 3.2,
+     "usable": true,
+     "image": "data/ream/2026-09-29.jpg",
+     "diff": "data/ream/2026-09-29_diff.jpg",
+     "compared_to": "2026-09-19",
+     "change_pct": 1.15,
+     "alert": false
+    },
+    {
+     "date": "2026-10-06",
+     "scene": "S2A_48PUS_20261006_1_L2A",
+     "cloud_pct": 10.8,
+     "usable": true,
+     "image": "data/ream/2026-10-06.jpg",
+     "diff": "data/ream/2026-10-06_diff.jpg",
+     "compared_to": "2026-09-29",
+     "change_pct": 3.77,
+     "alert": false
+    },
+    {
+     "date": "2026-10-09",
+     "scene": "S2B_T48PUS_20261009T034047_L2A",
+     "cloud_pct": 87.6,
+     "usable": false
+    },
+    {
+     "date": "2026-10-29",
+     "scene": "S2B_T48PUS_20261029T034016_L2A",
+     "cloud_pct": 0.4,
+     "usable": true,
+     "image": "data/ream/2026-10-29.jpg",
+     "diff": "data/ream/2026-10-29_diff.jpg",
+     "compared_to": "2026-10-06",
+     "change_pct": 1.15,
+     "alert": false
+    },
+    {
+     "date": "2026-11-03",
+     "scene": "S2C_48PUS_20261103_0_L2A",
+     "cloud_pct": 19.6,
+     "usable": false
+    },
+    {
+     "date": "2026-11-08",
+     "scene": "S2B_T48PUS_20261108T033434_L2A",
+     "cloud_pct": 1.4,
+     "usable": true,
+     "image": "data/ream/2026-11-08.jpg",
+     "diff": "data/ream/2026-11-08_diff.jpg",
+     "compared_to": "2026-10-29",
+     "change_pct": 0.24,
+     "alert": false
+    },
+    {
+     "date": "2026-11-18",
+     "scene": "S2B_T48PUS_20261118T033945_L2A",
+     "cloud_pct": 60.8,
+     "usable": false
+    },
+    {
+     "date": "2026-11-23",
+     "scene": "S2C_T48PUS_20261123T034221_L2A",
+     "cloud_pct": 0.0,
+     "usable": true,
+     "image": "data/ream/2026-11-23.jpg",
+     "diff": "data/ream/2026-11-23_diff.jpg",
+     "compared_to": "2026-11-08",
+     "change_pct": 0.41,
+     "alert": false
+    }
+   ],
+   "name": "Ream Naval Base",
+   "region": "Cambodia",
+   "lat": 10.509,
+   "lng": 103.614
+  },
+  "jiangnan": {
+   "observations": [
+    {
+     "date": "2026-08-02",
+     "scene": "S2B_T51RUQ_20260802T023522_L2A",
+     "cloud_pct": 0.5,
+     "usable": true,
+     "image": "data/jiangnan/2026-08-02.jpg",
+     "diff": null,
+     "compared_to": null,
+     "change_pct": null,
+     "alert": false
+    },
+    {
+     "date": "2026-08-07",
+     "scene": "S2C_51RUQ_20260807_0_L2A",
+     "cloud_pct": 62.0,
+     "usable": false
+    },
+    {
+     "date": "2026-08-17",
+     "scene": "S2C_T51RUQ_20260817T023520_L2A",
+     "cloud_pct": 37.7,
+     "usable": false
+    },
+    {
+     "date": "2026-08-27",
+     "scene": "S2C_51RUQ_20260827_0_L2A",
+     "cloud_pct": 93.1,
+     "usable": false
+    },
+    {
+     "date": "2026-09-06",
+     "scene": "S2C_T51RUQ_20260906T023516_L2A",
+     "cloud_pct": 99.7,
+     "usable": false
+    },
+    {
+     "date": "2026-09-14",
+     "scene": "S2B_51RUQ_20260914_0_L2A",
+     "cloud_pct": 10.1,
+     "usable": true,
+     "image": "data/jiangnan/2026-09-14.jpg",
+     "diff": "data/jiangnan/2026-09-14_diff.jpg",
+     "compared_to": "2026-08-02",
+     "change_pct": 6.16,
+     "alert": false
+    },
+    {
+     "date": "2026-09-21",
+     "scene": "S2B_T51RUQ_20260921T023738_L2A",
+     "cloud_pct": 65.9,
+     "usable": false
+    },
+    {
+     "date": "2026-09-26",
+     "scene": "S2C_T51RUQ_20260926T023523_L2A",
+     "cloud_pct": 21.3,
+     "usable": false
+    },
+    {
+     "date": "2026-10-06",
+     "scene": "S2C_51RUQ_20261006_0_L2A",
+     "cloud_pct": 0.6,
+     "usable": true,
+     "image": "data/jiangnan/2026-10-06.jpg",
+     "diff": "data/jiangnan/2026-10-06_diff.jpg",
+     "compared_to": "2026-09-14",
+     "change_pct": 4.84,
+     "alert": false
+    },
+    {
+     "date": "2026-10-08",
+     "scene": "S2A_T51RUQ_20261008T023133_L2A",
+     "cloud_pct": 0.7,
+     "usable": true,
+     "image": "data/jiangnan/2026-10-08.jpg",
+     "diff": "data/jiangnan/2026-10-08_diff.jpg",
+     "compared_to": "2026-10-06",
+     "change_pct": 0.77,
+     "alert": false
+    },
+    {
+     "date": "2026-10-09",
+     "scene": "S2C_T51RUQ_20261009T024840_L2A",
+     "cloud_pct": 19.7,
+     "usable": false
+    },
+    {
+     "date": "2026-10-11",
+     "scene": "S2B_T51RUQ_20261011T023612_L2A",
+     "cloud_pct": 48.3,
+     "usable": false
+    },
+    {
+     "date": "2026-10-14",
+     "scene": "S2B_51RUQ_20261014_0_L2A",
+     "cloud_pct": 0.0,
+     "usable": true,
+     "image": "data/jiangnan/2026-10-14.jpg",
+     "diff": "data/jiangnan/2026-10-14_diff.jpg",
+     "compared_to": "2026-10-08",
+     "change_pct": 2.1,
+     "alert": false
+    },
+    {
+     "date": "2026-10-26",
+     "scene": "S2C_T51RUQ_20261026T023723_L2A",
+     "cloud_pct": 19.0,
+     "usable": false
+    },
+    {
+     "date": "2026-10-28",
+     "scene": "S2A_51RUQ_20261028_0_L2A",
+     "cloud_pct": 23.9,
+     "usable": false
+    },
+    {
+     "date": "2026-10-31",
+     "scene": "S2B_T51RUQ_20261031T023823_L2A",
+     "cloud_pct": 0.0,
+     "usable": true,
+     "image": "data/jiangnan/2026-10-31.jpg",
+     "diff": "data/jiangnan/2026-10-31_diff.jpg",
+     "compared_to": "2026-10-14",
+     "change_pct": 2.44,
+     "alert": false
+    },
+    {
+     "date": "2026-11-10",
+     "scene": "S2A_51RUQ_20261110_1_L2A",
+     "cloud_pct": 0.0,
+     "usable": true,
+     "image": "data/jiangnan/2026-11-10.jpg",
+     "diff": "data/jiangnan/2026-11-10_diff.jpg",
+     "compared_to": "2026-10-31",
+     "change_pct": 2.15,
+     "alert": false
+    },
+    {
+     "date": "2026-11-20",
+     "scene": "S2B_51RUQ_20261120_0_L2A",
+     "cloud_pct": 3.1,
+     "usable": true,
+     "image": "data/jiangnan/2026-11-20.jpg",
+     "diff": "data/jiangnan/2026-11-20_diff.jpg",
+     "compared_to": "2026-11-10",
+     "change_pct": 2.45,
+     "alert": false
+    }
+   ],
+   "name": "Jiangnan Shipyard",
+   "region": "Shanghai",
+   "lat": 31.346,
+   "lng": 121.74
+  },
+  "hami": {
+   "observations": [
+    {
+     "date": "2026-10-10",
+     "scene": "S2B_46TDM_20261010_0_L2A",
+     "cloud_pct": 0.0,
+     "usable": true,
+     "image": "data/hami/2026-10-10.jpg",
+     "diff": null,
+     "compared_to": null,
+     "change_pct": null,
+     "alert": false
+    },
+    {
+     "date": "2026-10-13",
+     "scene": "S2B_T46TDM_20261013T045124_L2A",
+     "cloud_pct": 0.6,
+     "usable": true,
+     "image": "data/hami/2026-10-13.jpg",
+     "diff": "data/hami/2026-10-13_diff.jpg",
+     "compared_to": "2026-10-10",
+     "change_pct": 0.0,
+     "alert": false
+    },
+    {
+     "date": "2026-10-17",
+     "scene": "S2A_46TDM_20261017_0_L2A",
+     "cloud_pct": 0.0,
+     "usable": true,
+     "image": "data/hami/2026-10-17.jpg",
+     "diff": "data/hami/2026-10-17_diff.jpg",
+     "compared_to": "2026-10-13",
+     "change_pct": 0.03,
+     "alert": false
+    },
+    {
+     "date": "2026-10-18",
+     "scene": "S2C_T46TDM_20261018T044807_L2A",
+     "cloud_pct": 3.2,
+     "usable": true,
+     "image": "data/hami/2026-10-18.jpg",
+     "diff": "data/hami/2026-10-18_diff.jpg",
+     "compared_to": "2026-10-17",
+     "change_pct": 0.03,
+     "alert": false
+    },
+    {
+     "date": "2026-10-20",
+     "scene": "S2B_46TDM_20261020_0_L2A",
+     "cloud_pct": 0.0,
+     "usable": true,
+     "image": "data/hami/2026-10-20.jpg",
+     "diff": "data/hami/2026-10-20_diff.jpg",
+     "compared_to": "2026-10-18",
+     "change_pct": 0.02,
+     "alert": false
+    },
+    {
+     "date": "2026-10-25",
+     "scene": "S2C_T46TDM_20261025T044203_L2A",
+     "cloud_pct": 35.2,
+     "usable": false
+    },
+    {
+     "date": "2026-10-28",
+     "scene": "S2C_46TDM_20261028_0_L2A",
+     "cloud_pct": 0.2,
+     "usable": true,
+     "image": "data/hami/2026-10-28.jpg",
+     "diff": "data/hami/2026-10-28_diff.jpg",
+     "compared_to": "2026-10-20",
+     "change_pct": 0.33,
+     "alert": false
+    },
+    {
+     "date": "2026-10-30",
+     "scene": "S2B_T46TDM_20261030T044338_L2A",
+     "cloud_pct": 0.2,
+     "usable": true,
+     "image": "data/hami/2026-10-30.jpg",
+     "diff": "data/hami/2026-10-30_diff.jpg",
+     "compared_to": "2026-10-28",
+     "change_pct": 0.0,
+     "alert": false
+    },
+    {
+     "date": "2026-11-02",
+     "scene": "S2B_T46TDM_20261102T044937_L2A",
+     "cloud_pct": 0.4,
+     "usable": true,
+     "image": "data/hami/2026-11-02.jpg",
+     "diff": "data/hami/2026-11-02_diff.jpg",
+     "compared_to": "2026-10-30",
+     "change_pct": 0.52,
+     "alert": false
+    },
+    {
+     "date": "2026-11-04",
+     "scene": "S2C_46TDM_20261104_0_L2A",
+     "cloud_pct": 0.0,
+     "usable": true,
+     "image": "data/hami/2026-11-04.jpg",
+     "diff": "data/hami/2026-11-04_diff.jpg",
+     "compared_to": "2026-11-02",
+     "change_pct": 0.02,
+     "alert": false
+    },
+    {
+     "date": "2026-11-07",
+     "scene": "S2C_T46TDM_20261107T045001_L2A",
+     "cloud_pct": 0.0,
+     "usable": true,
+     "image": "data/hami/2026-11-07.jpg",
+     "diff": "data/hami/2026-11-07_diff.jpg",
+     "compared_to": "2026-11-04",
+     "change_pct": 0.0,
+     "alert": false
+    },
+    {
+     "date": "2026-11-09",
+     "scene": "S2B_46TDM_20261109_0_L2A",
+     "cloud_pct": 0.0,
+     "usable": true,
+     "image": "data/hami/2026-11-09.jpg",
+     "diff": "data/hami/2026-11-09_diff.jpg",
+     "compared_to": "2026-11-07",
+     "change_pct": 0.09,
+     "alert": false
+    },
+    {
+     "date": "2026-11-12",
+     "scene": "S2B_46TDM_20261112_0_L2A",
+     "cloud_pct": 29.0,
+     "usable": false
+    },
+    {
+     "date": "2026-11-17",
+     "scene": "S2C_46TDM_20261117_0_L2A",
+     "cloud_pct": 0.0,
+     "usable": true,
+     "image": "data/hami/2026-11-17.jpg",
+     "diff": "data/hami/2026-11-17_diff.jpg",
+     "compared_to": "2026-11-09",
+     "change_pct": 0.04,
+     "alert": false
+    },
+    {
+     "date": "2026-11-19",
+     "scene": "S2B_T46TDM_20261119T044321_L2A",
+     "cloud_pct": 0.0,
+     "usable": true,
+     "image": "data/hami/2026-11-19.jpg",
+     "diff": "data/hami/2026-11-19_diff.jpg",
+     "compared_to": "2026-11-17",
+     "change_pct": 0.03,
+     "alert": false
+    },
+    {
+     "date": "2026-11-22",
+     "scene": "S2B_46TDM_20261122_0_L2A",
+     "cloud_pct": 0.3,
+     "usable": true,
+     "image": "data/hami/2026-11-22.jpg",
+     "diff": "data/hami/2026-11-22_diff.jpg",
+     "compared_to": "2026-11-19",
+     "change_pct": 0.0,
+     "alert": false
+    },
+    {
+     "date": "2026-11-24",
+     "scene": "S2C_46TDM_20261124_0_L2A",
+     "cloud_pct": 0.0,
+     "usable": true,
+     "image": "data/hami/2026-11-24.jpg",
+     "diff": "data/hami/2026-11-24_diff.jpg",
+     "compared_to": "2026-11-22",
+     "change_pct": 0.0,
+     "alert": false
+    }
+   ],
+   "name": "Hami silo field",
+   "region": "Xinjiang",
+   "lat": 42.234,
+   "lng": 92.897
+  }
+ }
+}
