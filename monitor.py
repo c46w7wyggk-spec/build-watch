@@ -89,7 +89,15 @@ def detect_change(prev_rgb, prev_cls, cur_rgb, cur_cls, threshold=DIFF_THRESHOLD
         pm, cm = prev[..., b][valid].mean(), cur[..., b][valid].mean()
         if cm > 0:
             cur[..., b] *= pm / cm
-    dist = np.sqrt(((prev - cur) ** 2).mean(axis=2))
+    # Compare each pixel with its best match within 1 pixel, so the small
+    # misalignment between satellite passes doesn't light up every edge.
+    pp = np.pad(prev, ((1, 1), (1, 1), (0, 0)), mode="edge")
+    h, w = cur.shape[:2]
+    dist = None
+    for dy in (0, 1, 2):
+        for dx in (0, 1, 2):
+            d = np.sqrt(((pp[dy:dy + h, dx:dx + w] - cur) ** 2).mean(axis=2))
+            dist = d if dist is None else np.minimum(dist, d)
     raw = (dist > threshold) & valid
     changed = raw & (_neighbour_count(raw) >= 5)  # drop speckle
     return changed, float(changed.sum() / max(1, both_seen.sum()) * 100)
