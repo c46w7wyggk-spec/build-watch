@@ -1,0 +1,72 @@
+name: Monitor sites
+
+on:
+  schedule:
+    - cron: "17 13 */2 * *"   # every two days, 13:17 UTC
+  workflow_dispatch: {}        # "Run workflow" button in the Actions tab
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install
+        run: pip install -r requirements.txt
+
+      - name: Check for new imagery
+        run: python monitor.py
+
+      - name: Save results
+        run: |
+          git config user.name "build-watch-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data README.md
+          if git diff --cached --quiet; then
+            echo "No new imagery this run."
+          else
+            git commit -m "Monitor run $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      - name: Open an issue for each alert
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          python - <<'EOF'
+          import json, os, subprocess
+          repo = os.environ["REPO"]
+          raw = f"https://raw.githubusercontent.com/{repo}/main/"
+          for a in json.load(open("alerts_new.json")):
+              title = f"{a['name']}: {a['change_pct']:.1f}% changed ({a['compared_to']} → {a['date']})"
+              body = "\n".join([
+                  f"Build Watch flagged a change at **{a['name']}**.",
+                  "",
+                  f"- Compared: {a['compared_to']} → {a['date']}",
+                  f"- Changed area: {a['change_pct']:.1f}% of the usable image",
+                  f"- Cloud / no data in new image: {a['cloud_pct']}%",
+                  f"- Scene: `{a['scene']}`",
+                  "",
+                  "| Before | After | Changes (red) |",
+                  "|---|---|---|",
+                  f"| ![before]({raw}data/{a['site']}/{a['compared_to']}.jpg) | ![after]({raw}{a['image']}) | ![diff]({raw}{a['diff']}) |",
+                  "",
+                  "Check by eye before treating this as real: clouds, haze, boats and tides can trigger alerts.",
+              ])
+              subprocess.run(["gh", "issue", "create", "-R", repo, "-t", title, "-b", body], check=True)
+          EOF

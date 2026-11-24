@@ -1,0 +1,10 @@
+[
+  {"id": "subi",      "name": "Subi Reef",                "region": "Spratly Islands", "lat": 10.923, "lng": 114.084, "half_km": 3.0, "alert_pct": 5.0},
+  {"id": "fiery",     "name": "Fiery Cross Reef",         "region": "Spratly Islands", "lat": 9.549,  "lng": 112.889, "half_km": 2.5, "alert_pct": 5.0},
+  {"id": "mischief",  "name": "Mischief Reef",            "region": "Spratly Islands", "lat": 9.902,  "lng": 115.537, "half_km": 4.5, "alert_pct": 5.0},
+  {"id": "woody",     "name": "Woody Island",             "region": "Paracel Islands", "lat": 16.834, "lng": 112.338, "half_km": 2.0, "alert_pct": 5.0},
+  {"id": "djibouti",  "name": "PLA Support Base Djibouti","region": "Horn of Africa",  "lat": 11.590, "lng": 43.065,  "half_km": 1.5, "alert_pct": 4.0},
+  {"id": "ream",      "name": "Ream Naval Base",          "region": "Cambodia",        "lat": 10.509, "lng": 103.614, "half_km": 2.0, "alert_pct": 4.0},
+  {"id": "jiangnan",  "name": "Jiangnan Shipyard",        "region": "Shanghai",        "lat": 31.346, "lng": 121.740, "half_km": 2.0, "alert_pct": 5.0},
+  {"id": "hami",      "name": "Hami silo field",          "region": "Xinjiang",        "lat": 42.234, "lng": 92.897,  "half_km": 4.0, "alert_pct": 2.0}
+]

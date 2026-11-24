@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Build Watch Monitor</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{--bg:#12161b;--panel:#1a2027;--line:#2b343e;--fg:#e6e9ec;--muted:#93a0ad;--amber:#f2b33d;--ink:#1d1606;--red:#ff5a5a;
+  --display:"Archivo",Arial,sans-serif;--body:"IBM Plex Sans",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 var(--body);padding:16px max(16px,env(safe-area-inset-left)) 40px}
+.wrap{max-width:1000px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
+.eyebrow{font:500 11px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--amber)}
+h1{font:800 clamp(28px,6vw,40px)/1.05 var(--display);margin:4px 0}
+.muted{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:12px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.card h2{font:700 17px var(--display);margin:0}
+.meta{font:12px var(--mono);color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 10px}
+.meta .reg{color:var(--amber)}
+.img{position:relative;aspect-ratio:1;max-width:100%;background:#000;border-radius:4px;overflow:hidden}
+.img img{width:100%;height:100%;object-fit:cover;display:block}
+.img .lbl{position:absolute;left:6px;top:6px;font:500 11px var(--mono);background:rgba(0,0,0,.7);padding:2px 6px;border-radius:3px}
+.toggle{display:flex;gap:6px}
+.toggle button{flex:1;font:600 13px var(--body);background:var(--bg);color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:6px;cursor:pointer}
+.toggle button[aria-pressed="true"]{background:var(--amber);color:var(--ink);border-color:var(--amber)}
+.strip{display:flex;gap:4px;overflow-x:auto;padding-bottom:4px}
+.strip button{flex:0 0 auto;font:500 11px var(--mono);font-variant-numeric:tabular-nums;background:var(--bg);color:var(--fg);border:1px solid var(--line);border-radius:3px;padding:4px 6px;cursor:pointer}
+.strip button.alert{border-color:var(--red);color:var(--red)}
+.strip button[aria-current="true"]{outline:2px solid var(--amber)}
+.stat{font:13px var(--mono);font-variant-numeric:tabular-nums}
+.stat b{color:var(--red);font-weight:500}
+.empty{color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Build Watch · Sentinel-2 · 10 m</div>
+    <h1>Monitor</h1>
+    <p class="muted" id="sub">Loading…</p>
+  </header>
+  <div class="grid" id="grid"></div>
+  <p class="muted" style="font-size:12px">Imagery: Copernicus Sentinel-2 via Element 84 Earth Search. Change % is the share of the usable area whose colour changed noticeably. Clouds, haze, tides and boats can cause false alarms.</p>
+</div>
+<script>
+const el=(t,c,txt)=>{const e=document.createElement(t);if(c)e.className=c;if(txt!=null)e.textContent=txt;return e};
+fetch("data/index.json",{cache:"no-store"}).then(r=>r.json()).then(ix=>{
+  document.getElementById("sub").textContent="Checked every two days. Last run "+(ix.updated||"never")+" UTC.";
+  const grid=document.getElementById("grid");
+  for(const [id,s] of Object.entries(ix.sites)){
+    const c=el("div","card");c.appendChild(el("h2",null,s.name));
+    const m=el("div","meta");m.appendChild(el("span","reg",s.region));m.appendChild(el("span",null,s.lat+"°, "+s.lng+"°"));c.appendChild(m);
+    const obs=s.observations.filter(o=>o.usable);
+    if(!obs.length){c.appendChild(el("p","empty","No clear image yet."));grid.appendChild(c);continue}
+    const box=el("div","img"),img=el("img"),lbl=el("span","lbl");img.alt=s.name;box.append(img,lbl);c.appendChild(box);
+    const tg=el("div","toggle"),bI=el("button",null,"Image"),bD=el("button",null,"Changes");tg.append(bI,bD);c.appendChild(tg);
+    const st=el("div","stat");c.appendChild(st);
+    const strip=el("div","strip");c.appendChild(strip);
+    let cur=obs.length-1,showDiff=false;
+    function draw(){const o=obs[cur];const useDiff=showDiff&&o.diff;img.src=useDiff?o.diff:o.image;lbl.textContent=o.date+(useDiff?" · changes":"");
+      bI.setAttribute("aria-pressed",!useDiff);bD.setAttribute("aria-pressed",!!useDiff);bD.disabled=!o.diff;
+      st.textContent="";if(o.change_pct==null)st.textContent="First clear image";else{const b=el("b",null,o.change_pct.toFixed(1)+"%");st.append(b," changed since "+o.compared_to+(o.alert?" · alert":""))}
+      [...strip.children].forEach((b,i)=>b.setAttribute("aria-current",i===cur))}
+    obs.forEach((o,i)=>{const b=el("button",o.alert?"alert":null,o.date.slice(2));b.onclick=()=>{cur=i;draw()};strip.appendChild(b)});
+    bI.onclick=()=>{showDiff=false;draw()};bD.onclick=()=>{showDiff=true;draw()};
+    draw();strip.scrollLeft=strip.scrollWidth;grid.appendChild(c);
+  }
+}).catch(()=>{document.getElementById("sub").textContent="No results yet. The first run fills this in."});
+</script>
+</body>
+</html>
