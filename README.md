@@ -2,7 +2,7 @@
 
 Automatic change detection on free Sentinel-2 satellite imagery (10 m per pixel) for publicly reported Chinese construction sites. Runs every two days on GitHub Actions; big changes open an Issue in this repo.
 
-_Last run: 2026-11-24 23:54 UTC_
+_Last run: 2026-11-25 22:29 UTC_
 
 | Site | Latest clear image | Change vs previous | Alerts |
 |---|---|---|---|
@@ -12,7 +12,7 @@ _Last run: 2026-11-24 23:54 UTC_
 | **Woody Island**<br>Paracel Islands | <img src="data/woody/2026-11-16.jpg" width="220"><br>2026-11-16 · [change map](data/woody/2026-11-16_diff.jpg) | 0.2% since 2026-10-27 | 0 |
 | **PLA Support Base Djibouti**<br>Horn of Africa | <img src="data/djibouti/2026-11-20.jpg" width="220"><br>2026-11-20 · [change map](data/djibouti/2026-11-20_diff.jpg) | 1.3% since 2026-11-17 | 0 |
 | **Ream Naval Base**<br>Cambodia | <img src="data/ream/2026-11-23.jpg" width="220"><br>2026-11-23 · [change map](data/ream/2026-11-23_diff.jpg) | 0.2% since 2026-11-08 | 0 |
-| **Jiangnan Shipyard**<br>Shanghai | <img src="data/jiangnan/2026-11-20.jpg" width="220"><br>2026-11-20 · [change map](data/jiangnan/2026-11-20_diff.jpg) | 0.6% since 2026-11-10 | 0 |
+| **Jiangnan Shipyard**<br>Shanghai | <img src="data/jiangnan/2026-11-25.jpg" width="220"><br>2026-11-25 · [change map](data/jiangnan/2026-11-25_diff.jpg) | 0.2% since 2026-11-20 | 0 |
 | **Hami silo field**<br>Xinjiang | <img src="data/hami/2026-11-24.jpg" width="220"><br>2026-11-24 · [change map](data/hami/2026-11-24_diff.jpg) | 0.0% since 2026-11-22 | 0 |
 
 Imagery: Copernicus Sentinel-2 via Element 84 Earth Search. Change % is the share of the usable area whose colour changed noticeably; clouds, haze and boats can cause false alarms, so check each alert by eye.

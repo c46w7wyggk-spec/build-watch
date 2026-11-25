@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24 23:54",
+ "updated": "2026-11-25 22:29",
  "sites": {
   "subi": {
    "observations": [
@@ -976,6 +976,17 @@
      "diff": "data/jiangnan/2026-11-20_diff.jpg",
      "compared_to": "2026-11-10",
      "change_pct": 0.6,
+     "alert": false
+    },
+    {
+     "date": "2026-11-25",
+     "scene": "S2C_T51RUQ_20261125T023855_L2A",
+     "cloud_pct": 1.2,
+     "usable": true,
+     "image": "data/jiangnan/2026-11-25.jpg",
+     "diff": "data/jiangnan/2026-11-25_diff.jpg",
+     "compared_to": "2026-11-20",
+     "change_pct": 0.25,
      "alert": false
     }
    ],
