@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 22:29",
+ "updated": "2026-11-27 21:57",
  "sites": {
   "subi": {
    "observations": [
@@ -650,6 +650,17 @@
      "compared_to": "2026-11-17",
      "change_pct": 1.27,
      "alert": false
+    },
+    {
+     "date": "2026-11-25",
+     "scene": "S2C_T38PKT_20261125T074102_L2A",
+     "cloud_pct": 0.0,
+     "usable": true,
+     "image": "data/djibouti/2026-11-25.jpg",
+     "diff": "data/djibouti/2026-11-25_diff.jpg",
+     "compared_to": "2026-11-20",
+     "change_pct": 0.58,
+     "alert": false
     }
    ],
    "name": "PLA Support Base Djibouti",
@@ -1173,6 +1184,18 @@
      "compared_to": "2026-11-22",
      "change_pct": 0.0,
      "alert": false
+    },
+    {
+     "date": "2026-11-26",
+     "scene": "S2A_T46TDM_20261126T044231_L2A",
+     "cloud_pct": 16.8,
+     "usable": false
+    },
+    {
+     "date": "2026-11-27",
+     "scene": "S2C_46TDM_20261127_0_L2A",
+     "cloud_pct": 96.8,
+     "usable": false
     }
    ],
    "name": "Hami silo field",
